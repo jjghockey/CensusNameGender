@@ -33,6 +33,8 @@ the model.  The script also build plots with interesting breakdowns of the data.
   plot5 -  Start with a Vowel by Gender
   plot6 -  State by Gender
   plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
+  plot8 -  Age by Syllables (with coloring by gender)
+  plot9 -  Age by Name lenght (with coloring by gender)
 
 3. 003_ml_model.r - Actual Modeling
   -60/20/20 training, test, holdout set process is used to evaluate model fit. 
