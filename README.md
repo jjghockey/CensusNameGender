@@ -28,44 +28,44 @@ The purpose of this repository is to develop a model that could be used to deter
 2. 002_mk_features.r - Creates name_gender_features.rda.  This takes the data created in 001 and builds out features for use in
 the model.  The script also build plots with interesting breakdowns of the data. 
 
-     plot1 -  Boxplot of Syllables by Gender 
-     
-     plot2 -  Boxplot of Name Length By Gender 
-     
-     plot3 -  Last Character in the name by Gender
-     
-     plot4 -  First Initial by Gender
-     
-     plot5 -  Start with a Vowel by Gender
-     
-     plot6 -  State by Gender
-     
-     plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
-     
-     plot8 -  Age by Syllables (with coloring by gender)
-     
-     plot9 -  Age by Name length (with coloring by gender)
+   -plot1 -  Boxplot of Syllables by Gender 
+
+   -plot2 -  Boxplot of Name Length By Gender 
+
+   -plot3 -  Last Character in the name by Gender
+
+   -plot4 -  First Initial by Gender
+
+   -plot5 -  Start with a Vowel by Gender
+
+   -plot6 -  State by Gender
+
+   -plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
+
+   -plot8 -  Age by Syllables (with coloring by gender)
+
+   -plot9 -  Age by Name length (with coloring by gender)
   
   Features
   
-  name length - full string length of the name 
+  -name length - full string length of the name 
 
-  syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
+  -syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
   word. 
 
-  age - age of the person based on 2018 - year
+  -age - age of the person based on 2018 - year
 
-  year - year of birth
+  -year - year of birth
 
-  state - state or territory 
+  -state - state or territory 
 
-  first inital - first character of the name
+  -first inital - first character of the name
 
-  start with a vowel - does the name start with a vowel (a, e, i, o, or u)
+  -start with a vowel - does the name start with a vowel (a, e, i, o, or u)
 
-  end in a vowel - does the name end with a vowel (a, e, i, o, or u)
+  -end in a vowel - does the name end with a vowel (a, e, i, o, or u)
 
-  name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
+  -name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
   (e.g., mary elizabeth = maryelizabeth)
   
 
