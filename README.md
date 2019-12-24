@@ -9,4 +9,4 @@ Typically, companies are NOT gathering gender information, but in order to evalu
 
 There are many names that are clearly gender typed and always appear associated as Male or associated as Female.  However, many names are not clearly male or female.  
 
-The purpose of this repository is to develop a model that could be used to determine the gender of a name based on the characteristics of names that are clearly gender typed. 
+The purpose of this repository is to develop a model that could be used to determine the gender of a name based on the characteristics of names. 
