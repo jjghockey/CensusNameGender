@@ -1,7 +1,9 @@
 # Census Name Gender
 Repo for building and analyzing US Census Name mapping to Gender.  Source: https://www.ssa.gov/OACT/babynames/limits.html
 
-As the data and analysis are built out, I will add to the description.  As of now (12/17/2019), this is a sandbox. 
+As the data and analysis are built out, I will add to the description.  
+
+# Description
 
 I wanted to explore an interesting challenge that is facing companies that use machine learning to assess credit worthiness or employment based on non-gender factors.  Some of these algorithsm have been shown to be biased and discriminatory even though gender was never part of algorithm (see the Apple Card and Goldman Sachs, https://observer.com/2019/11/goldman-sachs-bias-detection-apple-card/). 
 
@@ -11,7 +13,7 @@ There are many names that are clearly gender typed and always appear associated 
 
 The purpose of this repository is to develop a model that could be used to determine the gender of a name based on the characteristics of names. 
 
-Script Directory
+# Script Directory
 
 1. 001_mk_data.r - Creates name_gender.rda (This is the SSA file downloaded from https://www.ssa.gov/OACT/babynames/limits.html)
    The data is split into territory data (organized by state or US territory, and year of birth) and year of birth data 
@@ -26,15 +28,46 @@ Script Directory
 2. 002_mk_features.r - Creates name_gender_features.rda.  This takes the data created in 001 and builds out features for use in
 the model.  The script also build plots with interesting breakdowns of the data. 
 
-  plot1 -  Boxplot of Syllables by Gender 
-  plot2 -  Boxplot of Name Length By Gender 
-  plot3 -  Last Character in the name by Gender
-  plot4 -  First Initial by Gender
-  plot5 -  Start with a Vowel by Gender
-  plot6 -  State by Gender
-  plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
-  plot8 -  Age by Syllables (with coloring by gender)
-  plot9 -  Age by Name lenght (with coloring by gender)
+     plot1 -  Boxplot of Syllables by Gender 
+     
+     plot2 -  Boxplot of Name Length By Gender 
+     
+     plot3 -  Last Character in the name by Gender
+     
+     plot4 -  First Initial by Gender
+     
+     plot5 -  Start with a Vowel by Gender
+     
+     plot6 -  State by Gender
+     
+     plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
+     
+     plot8 -  Age by Syllables (with coloring by gender)
+     
+     plot9 -  Age by Name length (with coloring by gender)
+  
+  Features
+  
+     name length - full string length of the name 
+     
+     syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
+     word. 
+     
+     age - age of the person based on 2018 - year
+     
+     year - year of birth
+     
+     state - state or territory 
+     
+     first inital - first character of the name
+     
+     start with a vowel - does the name start with a vowel (a, e, i, o, or u)
+     
+     end in a vowel - does the name end with a vowel (a, e, i, o, or u)
+     
+     name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
+     (e.g., mary elizabeth = maryelizabeth)
+  
 
 3. 003_ml_model.r - Actual Modeling
   -60/20/20 training, test, holdout set process is used to evaluate model fit. 
