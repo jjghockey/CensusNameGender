@@ -28,23 +28,23 @@ The purpose of this repository is to develop a model that could be used to deter
 2. 002_mk_features.r - Creates name_gender_features.rda.  This takes the data created in 001 and builds out features for use in
 the model.  The script also build plots with interesting breakdowns of the data. 
 
-   - plot1 -  Boxplot of Syllables by Gender 
+  - plot1 -  Boxplot of Syllables by Gender 
 
-   - plot2 -  Boxplot of Name Length By Gender 
+  - plot2 -  Boxplot of Name Length By Gender 
 
-   - plot3 -  Last Character in the name by Gender
+  - plot3 -  Last Character in the name by Gender
 
-   - plot4 -  First Initial by Gender
+  - plot4 -  First Initial by Gender
 
-   - plot5 -  Start with a Vowel by Gender
+  - plot5 -  Start with a Vowel by Gender
 
-   - plot6 -  State by Gender
+  - plot6 -  State by Gender
 
-   - plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
+  - plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
 
-   - plot8 -  Age by Syllables (with coloring by gender)
+  - plot8 -  Age by Syllables (with coloring by gender)
 
-   - plot9 -  Age by Name length (with coloring by gender)
+  - plot9 -  Age by Name length (with coloring by gender)
   
   Features
   
