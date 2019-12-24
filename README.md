@@ -28,58 +28,58 @@ The purpose of this repository is to develop a model that could be used to deter
 2. 002_mk_features.r - Creates name_gender_features.rda.  This takes the data created in 001 and builds out features for use in
 the model.  The script also build plots with interesting breakdowns of the data. 
 
-   -plot1 -  Boxplot of Syllables by Gender 
+   - plot1 -  Boxplot of Syllables by Gender 
 
-   -plot2 -  Boxplot of Name Length By Gender 
+   - plot2 -  Boxplot of Name Length By Gender 
 
-   -plot3 -  Last Character in the name by Gender
+   - plot3 -  Last Character in the name by Gender
 
-   -plot4 -  First Initial by Gender
+   - plot4 -  First Initial by Gender
 
-   -plot5 -  Start with a Vowel by Gender
+   - plot5 -  Start with a Vowel by Gender
 
-   -plot6 -  State by Gender
+   - plot6 -  State by Gender
 
-   -plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
+   - plot7 -  Age by Gender (Age is another way of looking at Year but as a continuous variable)
 
-   -plot8 -  Age by Syllables (with coloring by gender)
+   - plot8 -  Age by Syllables (with coloring by gender)
 
-   -plot9 -  Age by Name length (with coloring by gender)
+   - plot9 -  Age by Name length (with coloring by gender)
   
   Features
   
-  -name length - full string length of the name 
+  - name length - full string length of the name 
 
-  -syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
+  - syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
   word. 
 
-  -age - age of the person based on 2018 - year
+  - age - age of the person based on 2018 - year
 
-  -year - year of birth
+  - year - year of birth
 
-  -state - state or territory 
+  - state - state or territory 
 
-  -first inital - first character of the name
+  - first inital - first character of the name
 
-  -start with a vowel - does the name start with a vowel (a, e, i, o, or u)
+  - start with a vowel - does the name start with a vowel (a, e, i, o, or u)
 
-  -end in a vowel - does the name end with a vowel (a, e, i, o, or u)
+  - end in a vowel - does the name end with a vowel (a, e, i, o, or u)
 
-  -name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
+  - name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
   (e.g., mary elizabeth = maryelizabeth)
   
 
 3. 003_ml_model.r - Actual Modeling
-  -60/20/20 training, test, holdout set process is used to evaluate model fit. 
+  - 60/20/20 training, test, holdout set process is used to evaluate model fit. 
   
-  -Key features: year (factor), territory (factor), name length (continuous), number of syllables (continuous), 
+  - Key features: year (factor), territory (factor), name length (continuous), number of syllables (continuous), 
   end with a vowel (factor), first initial (factor), last character (factor), age (continuous)
   
-  -Outcome: binary male/female label (with a probability of that label)
+  - Outcome: binary male/female label (with a probability of that label)
   
-  -Initial evaluation: AUC with ROCR curve
+  - Initial evaluation: AUC with ROCR curve
   
-  -Final model will be compared to Unknown category.  Evaluation will be the probability of which gender as assigned by 
+  - Final model will be compared to Unknown category.  Evaluation will be the probability of which gender as assigned by 
   the model versus a simple binary yes/no based on the proportion of records assigned male vs female. 
 
 4. 004_ml_explain.r - Explanability of the features (TBD)
