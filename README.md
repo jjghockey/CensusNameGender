@@ -48,25 +48,25 @@ the model.  The script also build plots with interesting breakdowns of the data.
   
   Features
   
-     name length - full string length of the name 
-     
-     syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
-     word. 
-     
-     age - age of the person based on 2018 - year
-     
-     year - year of birth
-     
-     state - state or territory 
-     
-     first inital - first character of the name
-     
-     start with a vowel - does the name start with a vowel (a, e, i, o, or u)
-     
-     end in a vowel - does the name end with a vowel (a, e, i, o, or u)
-     
-     name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
-     (e.g., mary elizabeth = maryelizabeth)
+  name length - full string length of the name 
+
+  syllable_count (based on the syllable package - this package contains NLP processes to determine the number of syllables in 
+  word. 
+
+  age - age of the person based on 2018 - year
+
+  year - year of birth
+
+  state - state or territory 
+
+  first inital - first character of the name
+
+  start with a vowel - does the name start with a vowel (a, e, i, o, or u)
+
+  end in a vowel - does the name end with a vowel (a, e, i, o, or u)
+
+  name count - number of names (this feature does not work based on the data.  the SSA collapses all spaces from a name 
+  (e.g., mary elizabeth = maryelizabeth)
   
 
 3. 003_ml_model.r - Actual Modeling
